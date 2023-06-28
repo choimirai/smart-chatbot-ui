@@ -1,9 +1,9 @@
-import cl100k from '@dqbd/tiktoken/encoders/cl100k_base.json';
-import p50k from '@dqbd/tiktoken/encoders/p50k_base.json';
-import { Tiktoken, init } from '@dqbd/tiktoken/lite/init';
+import cl100k from 'tiktoken/encoders/cl100k_base.json';
+import p50k from 'tiktoken/encoders/p50k_base.json';
+import { Tiktoken, init } from 'tiktoken/lite/init';
 import fs from 'node:fs';
 
-const { get_encoding, encoding_for_model } = require('@dqbd/tiktoken');
+const { get_encoding, encoding_for_model } = require('tiktoken');
 
 let initialized = false;
 
