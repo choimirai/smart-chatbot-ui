@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://choimirai.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_36e6fb05544749aa8a3d4a08f0dc5c07 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_33ac471580894d848158eaf55c2d78da }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_b92ebdf5b36349488affe196f0aead34 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_2c593de6cc244896a5a6e865abde2913 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: choimirai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_36e6fb05544749aa8a3d4a08f0dc5c07 }}/aitutor:${{ github.sha }}
+        tags: choimirai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b92ebdf5b36349488affe196f0aead34 }}/aitutor:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'choai'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8fdeee6affe64ffcaea4fc7470624137 }}
-        images: 'choimirai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_36e6fb05544749aa8a3d4a08f0dc5c07 }}/aitutor:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a3b63f931aa54a7c8d6f329f764e004a }}
+        images: 'choimirai.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b92ebdf5b36349488affe196f0aead34 }}/aitutor:${{ github.sha }}'
