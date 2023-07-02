@@ -52,7 +52,7 @@ export const ModelSelect = () => {
           ))}
         </select>
       </div>
-      <div className="w-full mt-3 text-left text-neutral-700 dark:text-neutral-400 flex items-center">
+      {/* <div className="w-full mt-3 text-left text-neutral-700 dark:text-neutral-400 flex items-center">
         <a
           href="https://platform.openai.com/account/usage"
           target="_blank"
@@ -61,7 +61,7 @@ export const ModelSelect = () => {
           <IconExternalLink size={18} className={'inline mr-1'} />
           {t('View Sample Prompts')}
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
