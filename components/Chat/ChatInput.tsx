@@ -357,7 +357,7 @@ export const ChatInput = ({ onSend, onRegenerate, textareaRef }: Props) => {
         onRegenerate={() => handleRegenerate()}
         onStopConversation={handleStopConversation}
       />
-      {(chatMode.id === ChatModeID.AGENT ||
+      {/* {(chatMode.id === ChatModeID.AGENT ||
         chatMode.id === ChatModeID.CONVERSATIONAL_AGENT) && (
         <ChatInputContainer>
           <ChatPluginList
@@ -367,7 +367,7 @@ export const ChatInput = ({ onSend, onRegenerate, textareaRef }: Props) => {
             }
           />
         </ChatInputContainer>
-      )}
+      )} */}
       <ChatInputContainer className="mb-4">
         <button
           className="absolute left-2 top-2 rounded-sm p-1 text-neutral-800 opacity-60 hover:bg-neutral-200 hover:text-neutral-900 dark:bg-opacity-50 dark:text-neutral-100 dark:hover:text-neutral-200"
