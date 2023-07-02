@@ -28,10 +28,10 @@ export const useChatModeRunner = (conversations: Conversation[]) => {
     switch (plugin.id) {
       case ChatModeID.GOOGLE_SEARCH:
         return googleMode;
-      case ChatModeID.AGENT:
-        return agentMode;
-      case ChatModeID.CONVERSATIONAL_AGENT:
-        return conversationalAgentMode;
+      // case ChatModeID.AGENT:
+      //   return agentMode;
+      // case ChatModeID.CONVERSATIONAL_AGENT:
+      //   return conversationalAgentMode;
       default:
         return directMode;
     }

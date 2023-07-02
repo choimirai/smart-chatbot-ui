@@ -13,15 +13,11 @@ export interface ChatModeKey {
 
 export enum ChatModeID {
   DIRECT = 'direct',
-  AGENT = 'agent',
-  CONVERSATIONAL_AGENT = 'conversational-agent',
   GOOGLE_SEARCH = 'google-search',
 }
 
 export enum ChatModeName {
   DIRECT = 'Chat',
-  AGENT = 'Agent',
-  CONVERSATIONAL_AGENT = 'Conversational Agent',
   GOOGLE_SEARCH = 'Google Search',
 }
 
