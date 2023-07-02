@@ -31,16 +31,6 @@ export const ChatModes: Record<ChatModeID, ChatMode> = {
     name: ChatModeName.DIRECT,
     requiredKeys: [],
   },
-  [ChatModeID.AGENT]: {
-    id: ChatModeID.AGENT,
-    name: ChatModeName.AGENT,
-    requiredKeys: [],
-  },
-  [ChatModeID.CONVERSATIONAL_AGENT]: {
-    id: ChatModeID.CONVERSATIONAL_AGENT,
-    name: ChatModeName.CONVERSATIONAL_AGENT,
-    requiredKeys: [],
-  },
   [ChatModeID.GOOGLE_SEARCH]: {
     id: ChatModeID.GOOGLE_SEARCH,
     name: ChatModeName.GOOGLE_SEARCH,
